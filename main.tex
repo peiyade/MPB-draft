@@ -1,0 +1,104 @@
+%
+% Simple template for generating drafts of papers and articles
+%
+\documentclass[12pt,]{article}
+\usepackage{authblk}
+\usepackage{fullpage}
+\usepackage{amssymb,amsmath}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{siunitx}
+\usepackage[version=3]{mhchem}
+
+\usepackage{natbib}
+\bibliographystyle{ametsoc2014}
+
+\usepackage[left]{lineno}
+\linenumbers
+
+\usepackage{setspace}
+\doublespacing
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            colorlinks=false,
+            pdfborder={0 0 0}}
+\urlstyle{same} % don't use a different (monospace) font for urls
+
+\setcounter{secnumdepth}{5}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+% Redefine \includegraphics so that, unless explicit options are
+% given, the image width will not exceed the width or the height of the page.
+% Images get their normal width if they fit onto the page, but
+% are scaled down if they would overflow the margins.
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+ \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+    0.9\textheight
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{draft}
+
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+Considering variable separation functional in MPB with porous medium equations
+
+\begin{equation}
+\left\{\begin{array}{l}
+u_{t}=\Delta u^m-\nabla \cdot(u \nabla v) \\
+v_{t}=\Delta v-v w \\
+w_{t}=-\delta w+u.
+\end{array}\right.
+\end{equation}
+
+Define a variable separation functional $F(\cdot,\cdot)$ 
+\begin{equation}
+F(u,v) = \int u^{p} \varphi(v)
+\end{equation}
+for some $\varphi$ will be determined later.
+
+Therefore, 
+\begin{equation}
+\begin{aligned}
+\frac{\mathrm{d}}{\mathrm{d} t} \int u^{p} \varphi(v)=&-p\int \nabla\left(u^{p-1} \varphi(v)\right) \cdot \nabla u^m+ p\int \nabla\left(u^{p-1} \varphi(v)\right) \cdot(u \nabla v) \\
+&-\int \nabla\left(u^{p} \varphi^{\prime}(v)\right) \cdot \nabla v- \int u^{p} v \varphi^{\prime}(v) w \\
+=& -p(p-1)m\int u^{p+m-3}\varphi(v)|\nabla u|^2 - p\int u^{p}
+\end{aligned}
+\end{equation}
+
+
+% \newpage\clearpage
+
+% \renewcommand\refname{References}
+% % This is the default "example" bibtex file which ships with the distribution. Be sure to
+% % comment out the following line if you want to disable citing all bibtex entries by
+% % default.
+% \bibliography{xampl.bib}
+% \newpage
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

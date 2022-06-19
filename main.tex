@@ -83,9 +83,8 @@ for some $\varphi$ will be determined later.
 Therefore, 
 \begin{equation}
 \begin{aligned}
-\frac{\mathrm{d}}{\mathrm{d} t} \int u^{p} \varphi(v)=&-p\int \nabla\left(u^{p-1} \varphi(v)\right) \cdot \nabla u^m+ p\int \nabla\left(u^{p-1} \varphi(v)\right) \cdot(u \nabla v) \\
-&-\int \nabla\left(u^{p} \varphi^{\prime}(v)\right) \cdot \nabla v- \int u^{p} v \varphi^{\prime}(v) w \\
-=& -p(p-1)m\int u^{p+m-3}\varphi(v)|\nabla u|^2 - p\int u^{p}
+\frac{\mathrm{d}}{\mathrm{d} t} \int u^{p} \varphi(v)=&p\int u^{p-1}\varphi(v)\partial_t u  + \int u^p\varphi'(v)\partial_tv\\
+=&p\int u^{p-1}
 \end{aligned}
 \end{equation}
 

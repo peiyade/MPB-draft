@@ -21,7 +21,7 @@
 
 \usepackage[unicode=true]{hyperref}
 \hypersetup{breaklinks=true,
-            bookmarks=true,
+            % bookmarks=true,
             colorlinks=false,
             pdfborder={0 0 0}}
 \urlstyle{same} % don't use a different (monospace) font for urls
@@ -62,14 +62,85 @@
 
 \begin{document}
 
-\message{ !name(main.tex) !offset(46) }
+\message{ !name(main.tex) !offset(-3) }
 
+
+% \maketitle
+
+Considering variable separation functional in MPB with porous medium equations
+
+\begin{equation}
+\left\{\begin{array}{l}
+u_{t}=\Delta u^m-\nabla \cdot(u \nabla v) \\
+v_{t}=\Delta v-v w \\
+w_{t}=-\delta w+u.
+\end{array}\right.
+\end{equation}
+
+Define a variable separation functional $F(\cdot,\cdot)$ 
+\begin{equation}
+F(u,v) = \int u^{p} \varphi(v)
+\end{equation}
+for some $\varphi$ will be determined later.
+
+Therefore, 
+\begin{equation}
+\begin{aligned}
+\frac{\sigma_{p}}{p}\frac{\mathrm{d}}{\mathrm{d} t} \int u^{p} \varphi(v)=\sigma_{p}&\int u^{p-1}\varphi(v)\partial_t u  + \frac{\sigma_{p}}{p}\int u^p\varphi'(v)\partial_tv\\
+  =&\sigma_{p}\int u^{p-1}\varphi(v)\Delta u^m- \sigma_{p}\int u^{p-1}\varphi(v)\nabla\cdot(u\nabla v)\\
+  &+ \frac{\sigma_{p}}{p}\int u^p\varphi'(v)\Delta v -\frac{\sigma_{p}}{p} \int u^p\varphi'(v)vw\\
+  :=& I_1 + I_2 + I_3 + I_4.
+\end{aligned}
+\end{equation}
+\begin{equation}
+  \begin{aligned}
+    I_1=&-\sigma_{p}\int \nabla(u^{p-1}\varphi(v))\cdot\nabla u^m\\
+    =&-|(p-1)m|\int \varphi(v)u^{p-2}\nabla u \cdot u^{m-1}\nabla u - m\sigma_{p}\int u^{p-1}\varphi'(v)\nabla v \cdot u ^{m-1}\nabla u \\
+    =&-|(p-1)m|\int u^{p+m-3}\varphi(v)^2|\nabla u| ^2 - m\sigma_{p} \int u^{p+m-2}\varphi'(v)\nabla u \cdot \nabla v\\
+    =&-|(p-1)m|\int u^{p+m-3}\varphi(v)^2|\nabla u| ^2 + J
+  \end{aligned}
+\end{equation}
+\begin{equation}
+  \begin{aligned}
+    J =& m\sigma_{p}\int u^{\frac{p+m-3}{2}}\nabla u\cdot\varphi'(v)u^{\frac{p+m-1}{2}}\nabla v\\
+    =&\frac{|(p-1)m|}{4} \int u^{p+m-3}\varphi(v)^2|\nabla u|^2 + \frac{m}{|(p-1)|}\int \frac{\varphi'(v)^2}{\varphi(v)^2}u^{p+m-1}|\nabla v|^2
+  \end{aligned}
+\end{equation}
+\begin{equation}
+  \begin{aligned}
+    I_2 =& \sigma_{p}\int \nabla(u^{p-1}\varphi(v))\cdot u\nabla v\\
+    =& \sigma_{p}\int u^p\varphi'(v)|\nabla v|^2 + \sigma_{p}(p-1)\int u^{p-1}\varphi(v)\nabla u\cdot \nabla v\\
+    = & \sigma_{p}\int u^p\varphi'(v)|\nabla v|^2 + \sigma_{p}(p-1)\int u^{\frac{p+m-3}{2}}\varphi(v)\nabla u \cdot u^{\frac{p-m+1}{2}} \nabla v\\
+    \leqslant & \sigma_{p}\int u^p\varphi'(v)|\nabla v|^2 + \frac{|(p-1)m|}{4} \int u^{p+m-3}\varphi^2(v)|\nabla u|^{2} + \frac{|(p-1)|}{m}\int u^{p-m+1}|\nabla v|^2
+  \end{aligned}
+\end{equation}
 
 \begin{equation}
   \begin{aligned}
-    I_3=&\int u^p\varphi'(v)\Delta v = -\int \nabla(u^p\varphi'(c))\cdot\nablav\\
-    =&-p\int u^{p-1}\varphi'(v)\cdot \nabla u\cdot\nabla v - \int u^p\varphi''(v)|\nabla v|^2\\
-    \leqslant & \epsilon\int u^{p+m-3}|\nabla u |^{2}+C(\epsilon)\int u^{p-m+1}(\varphi''(v))^2|\nabla v|^2 + \int u^p|\varphi''(v)||\nabla v|^2
+    I_3=&\frac{\sigma_{p}}{p}\int u^p\varphi'(v)\Delta v = -\frac{\sigma_{p}}{p}\int \nabla(u^p\varphi'(c))\cdot\nabla v\\
+    =&-\sigma_{p}\int u^{p-1}\varphi'(v)\cdot \nabla u\cdot\nabla v -\frac{\sigma_{p}}{p} \int u^p\varphi''(v)|\nabla v|^2\\
+    \leqslant & \frac{|(p-1)m|}{4}\int u^{p+m-3}\varphi^2(v)|\nabla u |^{2}+\frac{1}{|(p-1)m|}\int u^{p-m+1}\frac{\varphi'(v)^2}{\varphi(v)^2}|\nabla v|^2\\
+    &-\frac{\sigma_{p}}{p} \int u^p\varphi''(v)|\nabla v|^2
+  \end{aligned}
+\end{equation}
+In conclusion, we have
+\begin{equation}
+  \begin{aligned}
+    &\quad\frac{\sigma_{p}}{p}\frac{\mathrm{d}}{\mathrm{d} t} \int u^{p} \varphi(v) +  \frac{|(p-1)m|}{4}\int u^{p+m-3}\varphi(v)^2|\nabla u| ^2 \\
+    &\leqslant \frac{1}{|(p-1)m|}\int u^{p-m+1}\left(\frac{|p-1|}{m}+\frac{1}{|(p-1)m|}\frac{\varphi'(v)^2}{\varphi(v)^2}\right)|\nabla v|^2\\
+    &\quad + \int u^p\left(-\frac{\sigma_{p}}{p}\varphi''(v)+\sigma_{p}\varphi'(v)\right)|\nabla v|^2\\
+    &\quad +\frac{m}{|(p-1)|}\int \frac{\varphi'(v)^2}{\varphi(v)^2}u^{p+m-1}|\nabla v|^2\\
+    &\quad - \frac{\sigma_{p}}{p}\int u^p\varphi'(v)vw
+  \end{aligned}
+\end{equation}
+
+\begin{equation}
+  \begin{aligned}
+    &\quad\sum_{k=1}^{\infty}\frac{\sigma_{p_k}}{p_k}\frac{\mathrm{d}}{\mathrm{d}t}\int u^{p_k}\varphi_k(v) + \sum_{k=1}^{\infty}\frac{|p_k-1|m}{4}\int u^{p_k+m-3}\varphi_k(v)|\nabla u|^2\\
+    &\leqslant \int u^{p_{k-1}}\left(\frac{|p_k-1|}{m}+\frac{1}{|(p_k-1)m|}\left(\frac{\varphi_k'(v)}{\varphi_k(v)}\right)^{2}\right)|\nabla v|^{2}\\
+    &\quad + \sum_{k=1}^{\infty}\int u^{p_{k}}\left(-\frac{\sigma_{p_k}}{p_k}\varphi_k''(v)+\sigma_{p_k}\varphi_{k}'(v)\right)|\nabla v|^2\\
+    &\quad + \sum_{k=1}^{\infty}\frac{m}{|p_k-1|-1}\int\left(\frac{\varphi_k'}{\varphi_{k}}\right)^2u^{p_{k+1}}|\nabla v|^2\\
+    &\quad + \sum_{k=1}^{\infty}u^{p_k}\varphi_k'(v)vw
   \end{aligned}
 \end{equation}
 
@@ -82,7 +153,8 @@
 % \bibliography{xampl.bib}
 % \newpage
 
+\message{ !name(main.tex) !offset(-5) }
+
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\message{ !name(main.tex) !offset(-88) }

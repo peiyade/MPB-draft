@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.28)  20 JUN 2022 11:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.28)  21 JUN 2022 12:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -349,13 +349,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip72
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 26.
-
-
-Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 26.
-
 Package hyperref Info: Option `colorlinks' set `false' on input line 26.
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen170
 \Gin@req@width=\dimen171
@@ -447,7 +442,7 @@ No auxiliary output files.
 Preview: Fontsize 12pt
 Preview: PDFoutput 1
 )
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 66.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 68.
  (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -527,137 +522,126 @@ l.84 \begin{equation}
                      
 Not a real error.
 
-./main.tex:90: Preview: Snippet 5 ended.(6504960+0x30785865).
+./main.tex:91: Preview: Snippet 5 ended.(7723737+0x30785865).
 <-><->
       
-l.90 \end{equation}
+l.91 \end{equation}
                    
 Not a real error.
 
 [5]
-./main.tex:91: Preview: Snippet 6 started.
+./main.tex:92: Preview: Snippet 6 started.
 <-><->
       
-l.91 \begin{equation}
+l.92 \begin{equation}
                      
 Not a real error.
 
-./main.tex:98: Preview: Snippet 6 ended.(7898828+0x30785865).
+./main.tex:99: Preview: Snippet 6 ended.(7898828+0x30785865).
 <-><->
       
-l.98 \end{equation}
+l.99 \end{equation}
                    
 Not a real error.
 
 [6]
-./main.tex:99: Preview: Snippet 7 started.
+./main.tex:100: Preview: Snippet 7 started.
 <-><->
       
-l.99 \begin{equation}
-                     
+l.100 \begin{equation}
+                      
 Not a real error.
 
-
-./main.tex:103: Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103   \end{align}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./main.tex:104: Preview: Snippet 7 ended.(3818342+0x30785865).
+./main.tex:105: Preview: Snippet 7 ended.(3931597+0x30785865).
 <-><->
       
-l.104 \end{equation}
+l.105 \end{equation}
                     
 Not a real error.
 
 [7]
-./main.tex:105: Preview: Snippet 8 started.
+./main.tex:106: Preview: Snippet 8 started.
 <-><->
       
-l.105 \begin{equation}
+l.106 \begin{equation}
                       
 Not a real error.
 
-
-./main.tex:111: Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111   \end{align}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./main.tex:112: Preview: Snippet 8 ended.(7898828+0x30785865).
+./main.tex:113: Preview: Snippet 8 ended.(7919795+0x30785865).
 <-><->
       
-l.112 \end{equation}
+l.113 \end{equation}
                     
 Not a real error.
 
 [8]
-./main.tex:114: Preview: Snippet 9 started.
+./main.tex:115: Preview: Snippet 9 started.
 <-><->
       
-l.114 \begin{equation}
+l.115 \begin{equation}
                       
 Not a real error.
 
-./main.tex:116: Undefined control sequence.
-l.116 ... -\int \nabla(u^p\varphi'(c))\cdot\nablav
-                                                  \\
+./main.tex:122: Preview: Snippet 9 ended.(8057548+0x30785865).
+<-><->
+      
+l.122 \end{equation}
+                    
+Not a real error.
+
+[9]
+./main.tex:124: Preview: Snippet 10 started.
+<-><->
+      
+l.124 \begin{equation}
+                      
+Not a real error.
+
+./main.tex:132: Preview: Snippet 10 ended.(10337272+0x30785865).
+<-><->
+      
+l.132 \end{equation}
+                    
+Not a real error.
+
+[10]
+./main.tex:134: Preview: Snippet 11 started.
+<-><->
+      
+l.134 \begin{equation}
+                      
+Not a real error.
+
+./main.tex:143: Undefined control sequence.
+l.143     & \quad + \sum_{k=1}^{\infty}\farc
+                                            {\sigma_{p_k}}{p_k}u^{p_k}\varph...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:120: Preview: Snippet 9 ended.(5858585+0x30785865).
+./main.tex:145: Preview: Snippet 11 ended.(21256881+0x30785865).
 <-><->
       
-l.120 \end{equation}
+l.145 \end{equation}
                     
 Not a real error.
 
-[9]
-./main.tex:122: Preview: Snippet 10 started.
-<-><->
-      
-l.122 \begin{equation}
-                      
-Not a real error.
-
-./main.tex:129: Preview: Snippet 10 ended.(7898828+0x30785865).
-<-><->
-      
-l.129 \end{equation}
-                    
-Not a real error.
-
-[10] ) 
+[11] ) 
 Here is how much of TeX's memory you used:
- 15541 strings out of 478238
- 297229 string characters out of 5850456
- 576804 words of memory out of 5000000
- 33553 multiletter control sequences out of 15000+600000
- 477746 words of font info for 51 fonts, out of 8000000 for 9000
+ 15538 strings out of 478238
+ 297193 string characters out of 5850456
+ 584804 words of memory out of 5000000
+ 33550 multiletter control sequences out of 15000+600000
+ 476206 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,570b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,11n,79p,570b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (10 pages, 116796 bytes).
+Output written on main.pdf (11 pages, 121579 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

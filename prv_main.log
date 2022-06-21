@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.28)  20 JUN 2022 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.28)  21 JUN 2022 11:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -357,13 +357,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip72
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 26.
-
-
-Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 26.
-
 Package hyperref Info: Option `colorlinks' set `false' on input line 26.
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen170
 \Gin@req@width=\dimen171
@@ -381,13 +376,14 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 63
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 63.
- (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
+
+(/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) )
 Beginning to dump on file prv_main.fmt
- (preloaded format=prv_main 2022.6.20)
+ (preloaded format=prv_main 2022.6.21)
 36134 strings of total length 669165
-554108 memory locations dumped; current usage is 512&545615
+554108 memory locations dumped; current usage is 512&545600
 32449 multiletter control sequences
 \font\nullfont=nullfont
 \font\c__fp_exp_intarray=cmr10 at 0.00002pt

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.28)  20 JUN 2022 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.28)  21 JUN 2022 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -349,13 +349,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip72
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 26.
-
-
-Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 26.
-
 Package hyperref Info: Option `colorlinks' set `false' on input line 26.
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen170
 \Gin@req@width=\dimen171
@@ -447,53 +442,198 @@ No auxiliary output files.
 
 Preview: Fontsize 12pt
 Preview: PDFoutput 1
-)  !name(main.tex) !offset(46) 
-./_region_.tex:68: Preview: Snippet 1 started.
+)  !name(main.tex) !offset(-3) 
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 71.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+./_region_.tex:72: Preview: Snippet 1 started.
 <-><->
       
-l.68 \begin{equation}
+l.72 \begin{equation}
                      
 Not a real error.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-./_region_.tex:70: Undefined control sequence.
-l.70 ...= -\int \nabla(u^p\varphi'(c))\cdot\nablav
-                                                  \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Preview: Tightpage -32891 -32891 32891 32891
-./_region_.tex:74: Preview: Snippet 1 ended.(5858585+0x30785865).
+./_region_.tex:78: Preview: Snippet 1 ended.(4718640+0x30785865).
 <-><->
       
-l.74 \end{equation}
+l.78 \end{equation}
                    
 Not a real error.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] ) 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+./_region_.tex:80: Preview: Snippet 2 started.
+<-><->
+      
+l.80 Define a variable separation functional $
+                                              F(\cdot,\cdot)$
+Not a real error.
+
+./_region_.tex:80: Preview: Snippet 2 ended.(589824+196608x1986228).
+<-><->
+      
+l.80 ...ble separation functional $F(\cdot,\cdot)$
+                                                  
+Not a real error.
+
+[2]
+./_region_.tex:81: Preview: Snippet 3 started.
+<-><->
+      
+l.81 \begin{equation}
+                     
+Not a real error.
+
+./_region_.tex:83: Preview: Snippet 3 ended.(1747645+0x30785865).
+<-><->
+      
+l.83 \end{equation}
+                   
+Not a real error.
+
+[3]
+./_region_.tex:84: Preview: Snippet 4 started.
+<-><->
+      
+l.84 for some $
+               \varphi$ will be determined later.
+Not a real error.
+
+./_region_.tex:84: Preview: Snippet 4 ended.(338603+152916x504438).
+<-><->
+      
+l.84 for some $\varphi$
+                        will be determined later.
+Not a real error.
+
+[4]
+./_region_.tex:87: Preview: Snippet 5 started.
+<-><->
+      
+l.87 \begin{equation}
+                     
+Not a real error.
+
+./_region_.tex:94: Preview: Snippet 5 ended.(7723737+0x30785865).
+<-><->
+      
+l.94 \end{equation}
+                   
+Not a real error.
+
+[5]
+./_region_.tex:95: Preview: Snippet 6 started.
+<-><->
+      
+l.95 \begin{equation}
+                     
+Not a real error.
+
+./_region_.tex:102: Preview: Snippet 6 ended.(7898828+0x30785865).
+<-><->
+      
+l.102 \end{equation}
+                    
+Not a real error.
+
+[6]
+./_region_.tex:103: Preview: Snippet 7 started.
+<-><->
+      
+l.103 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:108: Preview: Snippet 7 ended.(3931597+0x30785865).
+<-><->
+      
+l.108 \end{equation}
+                    
+Not a real error.
+
+[7]
+./_region_.tex:109: Preview: Snippet 8 started.
+<-><->
+      
+l.109 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:116: Preview: Snippet 8 ended.(7919795+0x30785865).
+<-><->
+      
+l.116 \end{equation}
+                    
+Not a real error.
+
+[8]
+./_region_.tex:118: Preview: Snippet 9 started.
+<-><->
+      
+l.118 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:125: Preview: Snippet 9 ended.(8057548+0x30785865).
+<-><->
+      
+l.125 \end{equation}
+                    
+Not a real error.
+
+[9]
+./_region_.tex:127: Preview: Snippet 10 started.
+<-><->
+      
+l.127 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:135: Preview: Snippet 10 ended.(10337272+0x30785865).
+<-><->
+      
+l.135 \end{equation}
+                    
+Not a real error.
+
+[10]
+./_region_.tex:137: Preview: Snippet 11 started.
+<-><->
+      
+l.137 \begin{equation}
+                      
+Not a real error.
+
+./_region_.tex:145: Preview: Snippet 11 ended.(12582971+0x30785865).
+<-><->
+      
+l.145 \end{equation}
+                    
+Not a real error.
+
+[11]  !name(main.tex) !offset(-5)  ) 
 Here is how much of TeX's memory you used:
- 15488 strings out of 478238
- 296316 string characters out of 5850456
- 576679 words of memory out of 5000000
- 33529 multiletter control sequences out of 15000+600000
- 474668 words of font info for 47 fonts, out of 8000000 for 9000
+ 15531 strings out of 478238
+ 297155 string characters out of 5850456
+ 579679 words of memory out of 5000000
+ 33549 multiletter control sequences out of 15000+600000
+ 476206 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,574b,737s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on _region_.pdf (1 page, 74003 bytes).
+ 75i,11n,79p,574b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on _region_.pdf (11 pages, 120801 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

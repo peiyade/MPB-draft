@@ -121,7 +121,7 @@ Therefore,
   \end{aligned}
 \end{equation}
 In conclusion, we have
-\begin{equation}
+\begin{equation}\label{bigpk}
   \begin{aligned}
     &\quad\frac{\sigma_{p}}{p}\frac{\mathrm{d}}{\mathrm{d} t} \int u^{p} \varphi(v) +  \frac{|(p-1)m|}{4}\int u^{p+m-3}\varphi(v)^2|\nabla u| ^2 \\
     &\leqslant \int u^{p-m+1}\left(\frac{|p-1|}{m}+\frac{1}{|(p-1)m|}\frac{\varphi'(v)^2}{\varphi(v)^2}\right)|\nabla v|^2\\
@@ -129,6 +129,87 @@ In conclusion, we have
     &\quad +\frac{m}{|(p-1)|}\int \frac{\varphi'(v)^2}{\varphi(v)^2}u^{p+m-1}|\nabla v|^2\\
     &\quad - \frac{\sigma_{p}}{p}\int u^p\varphi'(v)vw
   \end{aligned}
+\end{equation}
+
+Let $r=\lceil\frac{1}{m-1}\rceil$, we have
+\begin{equation}
+  \begin{aligned}
+    &\quad\sum_{k=r}^{\infty}\frac{1}{p_k}\frac{\mathrm{d}}{\mathrm{d}t}\int u^{p_k}\varphi_k + \sum_{k=1}^{\infty}\frac{|p_k-1|m}{4}\int \varphi_ku^{p_k+m-3}|\nabla u|^2\\
+    &= \sum_{k=r}^{\infty}\int \left(\frac{|p_k-1|}{m}+\frac{1}{|(p_k-1)m|}\left(\frac{\varphi_k'}{\varphi_k}\right)^{2}\right)u^{p_{k-1}}|\nabla v|^{2}\\
+    &\quad + \sum_{k=r}^{\infty}\int \left(-\frac{1}{p_k}\varphi_k''+\varphi_{k}'\right)u^{p_{k}}|\nabla v|^2\\
+    &\quad + \sum_{k=r}^{\infty}\frac{m}{|p_k-1|}\int\left(\frac{\varphi_k'}{\varphi_{k}}\right)^2u^{p_{k+1}}|\nabla v|^2\\
+    &\quad - \sum_{k=r}^{\infty}\frac{1}{p_k}\int u^{p_k}\varphi_k'vw\\
+    % & = \int \left(\frac{|m-2|}{m}+\frac{1}{|m(m-1)|}\left(\frac{\varphi_1'}{\varphi_1}\right)^{2}\right)|\nabla v|^{2}\\
+    & = \sum_{k=r}^\infty\int\bigg(\frac{|p_{k+1}-1|}{m}+\frac{1}{|(p_{k+1}-1)m|}\left(\frac{\varphi_{k+1}'}{\varphi_{k+1}}\right)^{2}-\frac{1}{p_k}\varphi_k'' + \varphi_k' \\
+    &\qquad\qquad\quad+\frac{m}{|p_{k-1}-1|}\left(\frac{\varphi_{k-1}'}{\varphi_{k-1}}\right)^{2}\bigg)u^{p_k}|\nabla v|^{2}\\
+    & \quad - \sum_{k=r}^{\infty}\frac{1}{p_k}\int u^{p_k}\varphi_k'vw
+  \end{aligned}
+\end{equation}
+Therefore, if $\{\varphi_k\}_{k=r-1}^{\infty}$ satisfy
+\begin{equation}
+\frac{|p_{k+1}-1|}{m}+\frac{1}{|(p_{k+1}-1)m|}\left(\frac{\varphi_{k+1}'}{\varphi_{k+1}}\right)^{2}-\frac{1}{p_k}\varphi_k'' + \varphi_k' +\frac{m}{|p_{k-1}-1|}\left(\frac{\varphi_{k-1}'}{\varphi_{k-1}}\right)^{2}\bigg) \leqslant0
+\end{equation}
+Similarily, \eqref{bigpk} 
+impiles
+\begin{equation}
+  \begin{aligned}
+    &\quad\sum_{k=r}^{\infty}\frac{1}{p_k}\frac{\mathrm{d}}{\mathrm{d}t}\int u^{p_k}\varphi_k\leqslant 0
+  \end{aligned}
+\end{equation}
+Similarly, we have
+\begin{equation}
+  \begin{aligned}
+    &\quad\sum_{k=1}^{r-1}\frac{1}{p_k}\frac{\mathrm{d}}{\mathrm{d}t}\int u^{p_k}\varphi_k + \sum_{k=1}^{\infty}\frac{|p_k-1|m}{4}\int u^{p_k+m-3}\varphi_k|\nabla u|^2\\
+    &\leqslant \sum_{k=1}^{r-1}\int \left(\frac{|p_k-1|}{m}+\frac{1}{|(p_k-1)m|}\left(\frac{\varphi_k'}{\varphi_k}\right)^{2}\right)u^{p_{k-1}}|\nabla v|^{2}\\
+    &\quad + \sum_{k=1}^{r-1}\int \left(-\frac{\sigma_{p_k}}{p_k}\varphi_k''+\sigma_{p_k}\varphi_{k}'\right)u^{p_{k}}|\nabla v|^2\\
+    &\quad + \sum_{k=1}^{r-1}\frac{m}{|p_k-1|}\int\left(\frac{\varphi_k'}{\varphi_{k}}\right)^2u^{p_{k+1}}|\nabla v|^2\\
+    &\quad + \sum_{k=1}^{r-1}\int u^{p_k}\varphi_k'vw\\
+    & = \int \left(\frac{|m-2|}{m}+\frac{1}{|m(m-1)|}\left(\frac{\varphi_1'}{\varphi_1}\right)^{2}\right)|\nabla v|^{2}\\
+    &\quad + \sum_{k=1}^{r-1}\Bigg(\frac{|p_{k+1}-1|}{m}+\frac{1}{|(p_{k+1}-1)m|}\left(\frac{\varphi_{k+1}'}{\varphi_{k+1}}\right)^{2}-\frac{1}{p_k}\varphi_k'' +\varphi_k' \\
+    &\qquad\qquad\quad+\frac{m}{|p_{k-1}-1|}\int\left(\frac{\varphi_{k-1}'}{\varphi_{k-1}}\right)^{2}\Bigg)u^{p_k}|\nabla v|^{2}\\
+    & \quad + \sum_{k=1}^{r-1}\frac{1}{p_k}\int u^{p_k}\varphi_k'vw
+  \end{aligned}
+\end{equation}
+
+Therefore, if $\{\varphi_k\}_{k=1}^{r-1}$ satisfies
+\begin{equation}
+\frac{|p_{k+1}-1|}{m}+\frac{1}{|(p_{k+1}-1)m|}\left(\frac{\varphi_{k+1}'}{\varphi_{k+1}}\right)^{2}-\frac{1}{p_k}\varphi_k'' +\varphi_k' +\frac{m}{|p_{k-1}-1|}\left(\frac{\varphi_{k-1}'}{\varphi_{k-1}}\right)^{2}\leqslant 0,
+\end{equation}
+it ensure that
+\begin{equation}
+  \begin{aligned}
+    \quad\sum_{k=1}^{r-1}\frac{1}{p_k}\frac{\mathrm{d}}{\mathrm{d}t}\int u^{p_k}\varphi_k & \leqslant \int \left(\frac{|m-2|}{m}+\frac{1}{|m(m-1)|}\left(\frac{\varphi_1'}{\varphi_1}\right)^{2}\right)|\nabla v|^{2}\\
+    & \quad + \sum_{k=1}^{r-1}\frac{1}{p_k}\int u^{p_k}\varphi_k'vw
+  \end{aligned}
+\end{equation}
+Furthermore, by direct calculation, we have
+\begin{equation}
+\begin{aligned}
+\frac{1}{2}\int v(t)^2 + \int_0^t\int |\nabla v(s)|^2\mathrm{d}s \leqslant \int v_0^2.
+\end{aligned}
+\end{equation}
+on the other hand
+\begin{equation}
+\begin{aligned}
+\frac{1}{p_k}\int u^{p_k}(t)\varphi_k'(t)v(t)w(t)&\leqslant \frac{1}{p_k}\|\varphi_k'\|_\infty\|v\|_\infty\int u^{p_k}w\\
+&\leqslant\frac{1}{p_k}\|\varphi_k'\|_\infty\|v\|_\infty\left(\int u\right)^{p_k}\left(\int w^{\frac{1}{p_k}-1}\right)^{\frac{1}{1-p_k}}
+\end{aligned}
+\end{equation}
+Because of the result that for some $q>0$, we have
+\begin{equation}
+\begin{aligned}
+\frac{1}{q}\frac{\mathrm{d}}{\mathrm{d}t}\int w^q +\delta\int w^{q} &= \int uw^{q-1}\\
+&\leqslant \left(\int w^{(q-1)\cdot\frac{q}{q-1}}\right)^{\frac{q-1}{q}}\left(\int u^{q}\right)^{\frac{1}{q}}\\
+&\leqslant \frac{\delta}{2}\int w^{q} +C(\delta)\int u^{q}
+\end{aligned}
+\end{equation}
+we have
+\begin{equation}
+\begin{aligned}
+\frac{1}{p_k}\int u^{p_k}(t)\varphi_k'v(t)w(t)&\leqslant \frac{1}{p_k}\|\varphi_k'\|_\infty\|v\|_\infty\|u_0\|_1^{p_k}\left(\int w^{\frac{1}{p_k}-1}\right)^{\frac{1}{1-p_k}}\\
+&\leqslant\frac{1}{p_k}C(\delta)\|\varphi_k'\|_\infty\|v\|_\infty\|u_0\|_1^{p_k}\left(\int_0^t\int u^{\frac{1}{p_k}-1}(s)\mathrm{d}s\right)^{\frac{1}{1-p_k}}\\
+&\leqslant\frac{1}{p_k}C(\delta)\|\varphi_k'\|_\infty\|v\|_\infty\|u_0\|_1^{p_k}t^{\frac{1}{1-p_k}}\sup_{s\in(0,t)}\|u(s)\|_{\frac{1-p_k}{p_k}}^{\frac{1}{p_k}}
+\end{aligned}
 \end{equation}
 
 
